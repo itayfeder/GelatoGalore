@@ -4,6 +4,7 @@ import com.itayfeder.gelato_galore.GelatoGalore;
 import com.itayfeder.gelato_galore.GelatoGaloreConfig;
 import com.itayfeder.gelato_galore.client.renderers.IceCreamItemRenderer;
 import com.itayfeder.gelato_galore.init.ItemInit;
+import com.itayfeder.gelato_galore.networking.SyncFlavorDataMessage;
 import com.itayfeder.gelato_galore.reload.FlavorData;
 import com.itayfeder.gelato_galore.reload.FlavorDataReloadListener;
 import com.itayfeder.gelato_galore.toppings.TickableTopping;
@@ -72,7 +73,7 @@ public class IceCreamItem extends Item {
     public void fillItemCategory(CreativeModeTab p_41391_, NonNullList<ItemStack> p_41392_) {
         if (this.allowedIn(p_41391_)) {
             if (scoops == 1) {
-                for (FlavorData data : FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values()) {
+                for (FlavorData data : FlavorDataReloadListener.getSidedMap().values()) {
                     ItemStack is = new ItemStack(this, 1);
                     setFlavor(is, data, 0);
                     setTopping(is, Toppings.EMPTY);
@@ -82,9 +83,9 @@ public class IceCreamItem extends Item {
         }
 
         if (p_41391_ == TAB_ALL) {
-            for (FlavorData data0 : FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values()) {
-                for (FlavorData data1 : FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values()) {
-                    for (FlavorData data2 : FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values()) {
+            for (FlavorData data0 : FlavorDataReloadListener.getSidedMap().values()) {
+                for (FlavorData data1 : FlavorDataReloadListener.getSidedMap().values()) {
+                    for (FlavorData data2 : FlavorDataReloadListener.getSidedMap().values()) {
                         ItemStack is = new ItemStack(this, 1);
                         setFlavor(is, data0, 0);
                         setFlavor(is, data1, 1);
@@ -104,9 +105,9 @@ public class IceCreamItem extends Item {
     @Override
     public ItemStack getDefaultInstance() {
         ItemStack stack = super.getDefaultInstance();
-        setFlavor(stack, FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(0), 0);
-        setFlavor(stack, FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(1), 1);
-        setFlavor(stack, FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(2), 2);
+        setFlavor(stack, FlavorDataReloadListener.getSidedMap().values().stream().toList().get(0), 0);
+        setFlavor(stack, FlavorDataReloadListener.getSidedMap().values().stream().toList().get(1), 1);
+        setFlavor(stack, FlavorDataReloadListener.getSidedMap().values().stream().toList().get(2), 2);
         setTopping(stack, Toppings.EMPTY);
         return stack;
     }
@@ -126,7 +127,7 @@ public class IceCreamItem extends Item {
         if (flavorTag.size() == 0) {
             currentFlavors = new ResourceLocation[scoops];
             for (int i = 0; i < scoops; i++) {
-                currentFlavors[i] = FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(0).id;
+                currentFlavors[i] = FlavorDataReloadListener.getSidedMap().values().stream().toList().get(0).id;
             }
         }
         for (int i = 0; i < flavorTag.size(); i++) {
@@ -157,13 +158,13 @@ public class IceCreamItem extends Item {
         CompoundTag compoundnbt = p_220012_0_.getOrCreateTag();
         ListTag currentFlavors = compoundnbt.getList("Flavors", 10);
         if (currentFlavors.size() == 0)
-            return FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(0);
+            return FlavorDataReloadListener.getSidedMap().values().stream().toList().get(0);
         if (location >= currentFlavors.size())
-            return FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(0);
+            return FlavorDataReloadListener.getSidedMap().values().stream().toList().get(0);
 
         CompoundTag tag = currentFlavors.getCompound(location);
         ResourceLocation relocation = ResourceLocation.tryParse(tag.getString(String.valueOf(location)));
-        return relocation != null ? FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.get(relocation) : FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList().get(0);
+        return relocation != null ? FlavorDataReloadListener.getSidedMap().get(relocation) : FlavorDataReloadListener.getSidedMap().values().stream().toList().get(0);
     }
 
     public static void setTopping(ItemStack p_220011_0_, Topping topping) {

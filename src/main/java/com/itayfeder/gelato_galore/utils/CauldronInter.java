@@ -45,7 +45,8 @@ public class CauldronInter {
 
                         blockEntity.setScoopsLeft(Mth.clamp(blockEntity.getScoopsLeft()-1, 0, IceCreamCauldronBlockEntity.MAX_SCOOPS));
                         blockEntity.update(p_175630_, p_175629_, p_175631_, p_175632_);
-
+                        blockEntity.setChanged();
+                        p_175630_.playSound((Player)null, p_175631_, SoundEvents.BUCKET_FILL_POWDER_SNOW, SoundSource.BLOCKS, 1.0F, 1.0F);
                     }
 
                 }
@@ -75,6 +76,8 @@ public class CauldronInter {
 
                         blockEntity.setScoopsLeft(Mth.clamp(blockEntity.getScoopsLeft()-1, 0, IceCreamCauldronBlockEntity.MAX_SCOOPS));
                         blockEntity.update(p_175630_, p_175629_, p_175631_, p_175632_);
+                        blockEntity.setChanged();
+                        p_175630_.playSound((Player)null, p_175631_, SoundEvents.BUCKET_FILL_POWDER_SNOW, SoundSource.BLOCKS, 1.0F, 1.0F);
 
                     }
 
@@ -106,6 +109,8 @@ public class CauldronInter {
 
                         blockEntity.setScoopsLeft(Mth.clamp(blockEntity.getScoopsLeft()-1, 0, IceCreamCauldronBlockEntity.MAX_SCOOPS));
                         blockEntity.update(p_175630_, p_175629_, p_175631_, p_175632_);
+                        blockEntity.setChanged();
+                        p_175630_.playSound((Player)null, p_175631_, SoundEvents.BUCKET_FILL_POWDER_SNOW, SoundSource.BLOCKS, 1.0F, 1.0F);
 
                     }
 
@@ -134,6 +139,7 @@ public class CauldronInter {
                 blockEntity.setScoopsLeft(IceCreamCauldronBlockEntity.MAX_SCOOPS);
                 blockEntity.setFlavor(SyrupItem.getFilledFlavor(p_175634_));
                 blockEntity.update(p_175630_, p_175629_, p_175631_, p_175632_);
+                blockEntity.setChanged();
             }
         }
 

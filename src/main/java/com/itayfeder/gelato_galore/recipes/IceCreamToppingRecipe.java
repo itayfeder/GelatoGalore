@@ -1,5 +1,6 @@
 package com.itayfeder.gelato_galore.recipes;
 
+import com.itayfeder.gelato_galore.init.RecipeInit;
 import com.itayfeder.gelato_galore.items.IceCreamItem;
 import com.itayfeder.gelato_galore.items.api.ToppingItem;
 import com.itayfeder.gelato_galore.toppings.Topping;
@@ -79,7 +80,7 @@ public class IceCreamToppingRecipe extends CustomRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return RecipeInit.ICE_CREAM_TOPPING.get();
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.itayfeder.gelato_galore.items;
 
 import com.itayfeder.gelato_galore.items.api.ToppingItem;
+import com.itayfeder.gelato_galore.networking.SyncFlavorDataMessage;
 import com.itayfeder.gelato_galore.reload.FlavorData;
 import com.itayfeder.gelato_galore.reload.FlavorDataReloadListener;
 import com.itayfeder.gelato_galore.toppings.SyrupTopping;
@@ -23,7 +24,7 @@ public class SyrupItem extends ToppingItem {
     @Override
     public void fillItemCategory(CreativeModeTab p_41391_, NonNullList<ItemStack> p_41392_) {
         if (this.allowedIn(p_41391_)) {
-            for (FlavorData data : FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values()) {
+            for (FlavorData data : FlavorDataReloadListener.getSidedMap().values()) {
                 ItemStack is = new ItemStack(this, 1);
                 setFilled(is, data.id);
                 p_41392_.add(is);
@@ -53,7 +54,7 @@ public class SyrupItem extends ToppingItem {
     public static FlavorData getFilledFlavor(ItemStack p_220012_0_) {
         CompoundTag compoundnbt = p_220012_0_.getOrCreateTag();
         ResourceLocation filled = ResourceLocation.tryParse(compoundnbt.getString("Filling"));
-        return FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.get(filled);
+        return FlavorDataReloadListener.getSidedMap().get(filled);
     }
     @Override
     public Component getName(ItemStack p_41458_) {

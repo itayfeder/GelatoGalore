@@ -3,25 +3,35 @@ package com.itayfeder.gelato_galore.reload;
 
 import com.google.common.collect.HashBiMap;
 import com.google.gson.*;
+import com.itayfeder.gelato_galore.networking.SyncFlavorDataMessage;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
+import net.minecraftforge.fml.LogicalSide;
+import net.minecraftforge.fml.util.thread.EffectiveSide;
+import net.minecraftforge.server.ServerLifecycleHooks;
 
 import java.util.Map;
 
 public class FlavorDataReloadListener extends SimpleJsonResourceReloadListener {
     public static final FlavorDataReloadListener INSTANCE;
     public static final Gson GSON = new GsonBuilder().create();
-    public final HashBiMap<ResourceLocation, FlavorData> FLAVOR_MAP;
+    public static final HashBiMap<ResourceLocation, FlavorData> FLAVOR_MAP = HashBiMap.create();
 
     public FlavorDataReloadListener() {
         super(GSON, "flavors");
-        this.FLAVOR_MAP = HashBiMap.create();
     }
 
     static {
         INSTANCE = new FlavorDataReloadListener();
+    }
+
+    public static Map<ResourceLocation, FlavorData> getSidedMap() {
+        if(EffectiveSide.get().isServer()) {
+            return FLAVOR_MAP;
+        }
+        return SyncFlavorDataMessage.CLIENT_FLAVORS_MAP;
     }
 
     @Override

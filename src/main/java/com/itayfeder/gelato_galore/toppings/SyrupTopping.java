@@ -26,7 +26,7 @@ public class SyrupTopping extends Topping {
 
     @Override
     public Topping changeBasedOnTag(CompoundTag tag) {
-        flavor = FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.get(ResourceLocation.tryParse(tag.getString("Flavor")));
+        flavor = FlavorDataReloadListener.getSidedMap().get(ResourceLocation.tryParse(tag.getString("Flavor")));
         return super.changeBasedOnTag(tag);
     }
 

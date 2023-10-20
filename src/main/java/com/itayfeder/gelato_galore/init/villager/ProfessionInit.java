@@ -82,7 +82,7 @@ public class ProfessionInit {
         }
 
         public MerchantOffer getOffer(Entity p_219688_, RandomSource p_219689_) {
-            List<FlavorData> list = FlavorDataReloadListener.INSTANCE.FLAVOR_MAP.values().stream().toList();
+            List<FlavorData> list = FlavorDataReloadListener.getSidedMap().values().stream().toList();
             ItemStack itemstack = new ItemStack(this.itemThing);
             for (int i = 0; i < this.itemThing.scoops; i++) {
                 FlavorData enchantment = list.get(p_219689_.nextInt(list.size()));

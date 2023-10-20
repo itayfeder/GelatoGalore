@@ -13,7 +13,7 @@ import com.itayfeder.gelato_galore.init.RecipeInit;
 import com.itayfeder.gelato_galore.init.villager.PoiTypeInit;
 import com.itayfeder.gelato_galore.init.villager.ProfessionInit;
 import com.itayfeder.gelato_galore.mixin.PoiTypeMixin;
-import com.itayfeder.gelato_galore.network.SyncCauldronMessage;
+import com.itayfeder.gelato_galore.networking.SyncFlavorDataMessage;
 import com.itayfeder.gelato_galore.toppings.Toppings;
 import com.itayfeder.gelato_galore.utils.CauldronInter;
 import com.mojang.logging.LogUtils;
@@ -97,7 +97,7 @@ public class GelatoGalore
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        GelatoGalore.addMessage(SyncCauldronMessage.class, SyncCauldronMessage::toBytes, SyncCauldronMessage::new, SyncCauldronMessage::handle);
+        GelatoGalore.addMessage(SyncFlavorDataMessage.class, SyncFlavorDataMessage::toBytes, SyncFlavorDataMessage::new, SyncFlavorDataMessage::handle);
 
         CauldronInter.register();
     }
