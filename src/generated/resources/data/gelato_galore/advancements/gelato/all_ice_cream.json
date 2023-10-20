@@ -1,0 +1,122 @@
+{
+  "parent": "gelato_galore:gelato/get_ice_cream",
+  "criteria": {
+    "gelato_galore:caramel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one"
+            ],
+            "nbt": "{Flavors:[{0:\"gelato_galore:caramel\"}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:chocolate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one"
+            ],
+            "nbt": "{Flavors:[{0:\"gelato_galore:chocolate\"}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:honey": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one"
+            ],
+            "nbt": "{Flavors:[{0:\"gelato_galore:honey\"}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:melon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one"
+            ],
+            "nbt": "{Flavors:[{0:\"gelato_galore:melon\"}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:sweet_berry": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one"
+            ],
+            "nbt": "{Flavors:[{0:\"gelato_galore:sweet_berry\"}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:vanilla": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one"
+            ],
+            "nbt": "{Flavors:[{0:\"gelato_galore:vanilla\"}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.gelato_galore.all_ice_cream.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "gelato_galore:ice_cream_one",
+      "nbt": "{Flavors:[{0:\"gelato_galore:vanilla\"}]}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.gelato_galore.all_ice_cream.title"
+    }
+  },
+  "requirements": [
+    [
+      "gelato_galore:chocolate"
+    ],
+    [
+      "gelato_galore:sweet_berry"
+    ],
+    [
+      "gelato_galore:vanilla"
+    ],
+    [
+      "gelato_galore:caramel"
+    ],
+    [
+      "gelato_galore:honey"
+    ],
+    [
+      "gelato_galore:melon"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

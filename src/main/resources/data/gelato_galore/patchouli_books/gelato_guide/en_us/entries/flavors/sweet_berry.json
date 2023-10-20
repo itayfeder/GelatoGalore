@@ -1,0 +1,20 @@
+{
+  "name": "Sweet Berry",
+  "icon": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:sweet_berry\"}]}",
+  "category": "gelato_galore:flavors_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+	  "title": "Sweet Berry Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:sweet_berry\"}]}",
+      "text": "Sweet Berry ice cream has a sweet flavor, that goes well with Chocolate and Vanilla!"
+    },
+	{
+      "type": "patchouli:crafting",
+      "title": "Sweet Berry Syrup",
+      "recipe": "gelato_galore:sweet_berry_syrup",
+      "result": "gelato_galore:syrup{Filling: \"gelato_galore:sweet_berry\"}",
+      "text": "To make the syrup you need to create ice cream, you need to place these items in a crafting table."
+    }
+  ]
+}

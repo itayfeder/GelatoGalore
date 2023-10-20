@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gelato_galore:item/syrup_bottle",
+        "layer1": "gelato_galore:item/syrup_filling"
+    }
+}

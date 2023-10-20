@@ -1,0 +1,20 @@
+{
+  "name": "Chocolate",
+  "icon": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:chocolate\"}]}",
+  "category": "gelato_galore:flavors_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+	  "title": "Chocolate Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:chocolate\"}]}",
+      "text": "Considered the most popular ice cream flavor, chocolate-flavored ice cream can be found everywhere."
+    },
+	{
+      "type": "patchouli:crafting",
+      "title": "Chocolate Syrup",
+      "recipe": "gelato_galore:chocolate_syrup",
+      "result": "gelato_galore:syrup{Filling:\"gelato_galore:chocolate\"}",
+      "text": "To make the syrup you need to create ice cream, you need to place these items in a crafting table."
+    }
+  ]
+}

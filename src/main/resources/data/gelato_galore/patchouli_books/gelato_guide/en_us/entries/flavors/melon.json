@@ -1,0 +1,20 @@
+{
+  "name": "Melon",
+  "icon": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:melon\"}]}",
+  "category": "gelato_galore:flavors_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+	  "title": "Melon Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:melon\"}]}",
+      "text": "You can now enjoy the refreshing taste of a melon in the shape of an ice cream ball!"
+    },
+	{
+      "type": "patchouli:crafting",
+      "title": "Melon Syrup",
+      "recipe": "gelato_galore:melon_syrup",
+      "result": "gelato_galore:syrup{Filling:\"gelato_galore:melon\"}",
+      "text": "To make the syrup you need to create ice cream, you need to place these items in a crafting table."
+    }
+  ]
+}

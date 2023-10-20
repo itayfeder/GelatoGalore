@@ -1,0 +1,9 @@
+{
+    "name": "melon",
+	"color": 16743017,
+	"effectInstance": {
+		"effect": "minecraft:strength",
+		"duration": 900,
+		"amplifier": 0
+	}
+}

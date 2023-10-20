@@ -1,0 +1,27 @@
+{
+  "name": "Making Ice Cream",
+  "icon": "minecraft:cauldron",
+  "category": "gelato_galore:basics_category",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "title": "Making Ice Cream",
+      "images": [
+              "gelato_galore:textures/gui/patchouli/chocolate_cauldron.png"
+      ],
+      "text": "To make ice cream, you need a cauldron filled with Powder Snow, as a base."
+    },
+	{
+      "type": "patchouli:spotlight",
+      "title": "Syrup",
+      "item": "gelato_galore:syrup{Filling:\"gelato_galore:chocolate\"},gelato_galore:syrup{Filling:\"gelato_galore:sweet_berry\"},gelato_galore:syrup{Filling:\"gelato_galore:vanilla\"}",
+      "text": "Syrups are the base of every ice cream flavor. To create them, you place Milk, Sugar and another ingredient in a crafting table. The ingredient placed in determines the flavor of your syrup.$(br2)After you create a syrup, just right click your powder snow cauldron, and you get one filled with ice cream!"
+    },
+	{
+      "type": "patchouli:spotlight",
+      "title": "Building Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:chocolate\"}]},gelato_galore:ice_cream_two{Flavors:[{0: \"gelato_galore:chocolate\"}, {1: \"gelato_galore:sweet_berry\"}]},gelato_galore:ice_cream_three{Flavors:[{0: \"gelato_galore:chocolate\"}, {1: \"gelato_galore:sweet_berry\"}, {2: \"gelato_galore:vanilla\"}]}",
+      "text": "Why stop at 1 scoop? You can make your Ice Cream have up to 3 balls of ice cream in any flavor you want!$(br2)To do so, simply click on an ice cream filled cauldron with the ice cream to add another ball."
+    }
+  ]
+}

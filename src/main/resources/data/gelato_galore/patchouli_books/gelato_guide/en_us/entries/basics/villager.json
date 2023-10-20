@@ -1,0 +1,18 @@
+{
+  "name": "The Confectioner",
+  "icon": "minecraft:villager_spawn_egg",
+  "category": "gelato_galore:basics_category",
+  "pages": [
+	{
+      "type": "patchouli:entity",
+      "name": "The Confectioner",
+      "entity": "minecraft:villager{VillagerData: {profession: \"gelato_galore:confectioner\", level: 1, type: \"minecraft:plains\"}}",
+      "text": "They always find out..."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Employing",
+      "text": "This new villager will buy and sell sweets and ingredients for ice cream, cakes, and cookies.$(br2)You can get this villager buy placing an Ice Cream Cauldron near a villager."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "honey",
+	"color": 16767565,
+	"effectInstance": {
+		"effect": "minecraft:saturation",
+		"duration": 900,
+		"amplifier": 0
+	}
+}

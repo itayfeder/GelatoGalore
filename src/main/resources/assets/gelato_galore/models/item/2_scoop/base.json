@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gelato_galore:item/2_scoop/cone",
+        "layer1": "gelato_galore:item/2_scoop/bottom_scoop",
+        "layer2": "gelato_galore:item/2_scoop/top_scoop"
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "gelato_galore:gelato/get_ice_cream",
+  "criteria": {
+    "full_ice_cream": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_three"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.gelato_galore.full_ice_cream.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "gelato_galore:ice_cream_three",
+      "nbt": "{Flavors:[{0:\"gelato_galore:chocolate\"},{1:\"gelato_galore:sweet_berry\"},{2:\"gelato_galore:vanilla\"}]}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.gelato_galore.full_ice_cream.title"
+    }
+  },
+  "requirements": [
+    [
+      "full_ice_cream"
+    ]
+  ]
+}

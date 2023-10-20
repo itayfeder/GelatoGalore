@@ -1,0 +1,77 @@
+{
+  "parent": "gelato_galore:gelato/get_ice_cream",
+  "criteria": {
+    "gelato_galore:cookie_chips": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one",
+              "gelato_galore:ice_cream_two",
+              "gelato_galore:ice_cream_three"
+            ],
+            "nbt": "{Topping:{id:\"gelato_galore:cookie_chips\"}}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:rainbow_sprinkles": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one",
+              "gelato_galore:ice_cream_two",
+              "gelato_galore:ice_cream_three"
+            ],
+            "nbt": "{Topping:{id:\"gelato_galore:rainbow_sprinkles\"}}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gelato_galore:syrup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:ice_cream_one",
+              "gelato_galore:ice_cream_two",
+              "gelato_galore:ice_cream_three"
+            ],
+            "nbt": "{Topping:{id:\"gelato_galore:syrup\"}}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.gelato_galore.top_ice_cream.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "gelato_galore:ice_cream_one",
+      "nbt": "{Flavors:[{0:\"gelato_galore:vanilla\"}],Topping:{id:\"gelato_galore:cookie_chips\"}}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.gelato_galore.top_ice_cream.title"
+    }
+  },
+  "requirements": [
+    [
+      "gelato_galore:syrup"
+    ],
+    [
+      "gelato_galore:cookie_chips"
+    ],
+    [
+      "gelato_galore:rainbow_sprinkles"
+    ]
+  ]
+}

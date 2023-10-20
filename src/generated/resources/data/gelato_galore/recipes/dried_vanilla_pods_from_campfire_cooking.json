@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "gelato_galore:vanilla_pods"
+  },
+  "result": "gelato_galore:dried_vanilla_pods"
+}

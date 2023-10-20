@@ -1,0 +1,9 @@
+{
+    "name": "sweet_berry",
+	"color": 15178409,
+	"effectInstance": {
+		"effect": "minecraft:regeneration",
+		"duration": 900,
+		"amplifier": 0
+	}
+}

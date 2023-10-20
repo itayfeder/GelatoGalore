@@ -1,0 +1,9 @@
+{
+  "values": [
+    "gelato_galore:dried_vanilla_pods",
+    {
+      "id": "neapolitan:dried_vanilla_pods",
+      "required": false
+    }
+  ]
+}

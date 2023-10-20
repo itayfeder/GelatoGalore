@@ -1,0 +1,38 @@
+{
+  "parent": "gelato_galore:gelato/root",
+  "criteria": {
+    "get_syrup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gelato_galore:syrup"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.gelato_galore.use_syrup.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "gelato_galore:syrup",
+      "nbt": "{Filling:\"gelato_galore:sweet_berry\"}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.gelato_galore.use_syrup.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_syrup"
+    ]
+  ]
+}

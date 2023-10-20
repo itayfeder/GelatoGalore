@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.itayfeder.gelato_galore.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "gelato_galore.refmap.json",
+	"minVersion": "0.8",
+	"mixins": [
+	    "PoiTypeMixin"
+	],
+	"client": [
+
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Vanilla",
+  "icon": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:vanilla\"}]}",
+  "category": "gelato_galore:flavors_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+	  "title": "Vanilla Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:vanilla\"}]}",
+      "text": "One of the classics. A flavor gathered from special vanilla vines growing on jungle trees."
+    },
+	{
+      "type": "patchouli:crafting",
+      "title": "Vanilla Syrup",
+      "recipe": "gelato_galore:vanilla_syrup",
+      "result": "gelato_galore:syrup{Filling: \"gelato_galore:vanilla\"}",
+      "text": "To make the syrup you need to create ice cream, you need to place these items in a crafting table."
+    }
+  ]
+}

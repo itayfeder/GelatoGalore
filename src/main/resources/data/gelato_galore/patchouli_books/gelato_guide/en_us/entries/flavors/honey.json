@@ -1,0 +1,20 @@
+{
+  "name": "Honey",
+  "icon": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:honey\"}]}",
+  "category": "gelato_galore:flavors_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+	  "title": "Honey Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:honey\"}]}",
+      "text": "While not a conventional ice cream flavor, bees love it, so why shouldn't players?"
+    },
+	{
+      "type": "patchouli:crafting",
+      "title": "Honey Syrup",
+      "recipe": "gelato_galore:honey_syrup",
+      "result": "gelato_galore:syrup{Filling:\"gelato_galore:honey\"}",
+      "text": "To make the syrup you need to create ice cream, you need to place these items in a crafting table."
+    }
+  ]
+}

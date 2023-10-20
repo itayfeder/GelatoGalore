@@ -1,0 +1,20 @@
+{
+  "name": "Caramel",
+  "icon": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:caramel\"}]}",
+  "category": "gelato_galore:flavors_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+	  "title": "Caramel Ice Cream",
+      "item": "gelato_galore:ice_cream_one{Flavors:[{0: \"gelato_galore:caramel\"}]}",
+      "text": "Caramel is created as a result of smelting honey in a furnace. It is also very tasty!"
+    },
+	{
+      "type": "patchouli:crafting",
+      "title": "Caramel Syrup",
+      "recipe": "gelato_galore:caramel_syrup",
+      "result": "gelato_galore:syrup{Filling: \"gelato_galore:caramel\"}",
+      "text": "To make the syrup you need to create ice cream, you need to place these items in a crafting table."
+    }
+  ]
+}

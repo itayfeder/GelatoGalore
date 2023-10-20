@@ -1,0 +1,5 @@
+{
+    "name": "Flavors",
+    "description": "Ice cream can be created in a plethora of different flavors!$(br2)The flavors shown here are flavors added in Gelato Galore.",
+    "icon": "gelato_galore:ice_cream_three{Flavors: [{0: \"gelato_galore:chocolate\"}, {1: \"gelato_galore:sweet_berry\"}, {2: \"gelato_galore:vanilla\"}]}"
+}

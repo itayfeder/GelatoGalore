@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "get_powder_snow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:powder_snow_bucket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/ice.png",
+    "description": {
+      "translate": "advancements.gelato_galore.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "gelato_galore:ice_cream_three",
+      "nbt": "{Flavors:[{0:\"gelato_galore:chocolate\"},{1:\"gelato_galore:sweet_berry\"},{2:\"gelato_galore:vanilla\"}]}"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.gelato_galore.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_powder_snow"
+    ]
+  ]
+}

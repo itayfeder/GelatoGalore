@@ -1,0 +1,9 @@
+{
+    "name": "vanilla",
+	"color": 16772554,
+	"effectInstance": {
+		"effect": "minecraft:haste",
+		"duration": 900,
+		"amplifier": 0
+	}
+}

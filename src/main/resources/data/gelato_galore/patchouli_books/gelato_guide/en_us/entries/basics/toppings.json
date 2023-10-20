@@ -1,0 +1,31 @@
+{
+  "name": "Toppings",
+  "icon": "gelato_galore:rainbow_sprinkles",
+  "category": "gelato_galore:basics_category",
+  "pages": [
+	{
+      "type": "patchouli:spotlight",
+      "title": "Toppings",
+      "item": "gelato_galore:ice_cream_one{Flavors: [{0: \"gelato_galore:vanilla\"}], Topping: {Flavor: \"gelato_galore:caramel\", id: \"gelato_galore:syrup\"}},gelato_galore:ice_cream_one{Flavors: [{0: \"gelato_galore:vanilla\"}], Topping: {id: \"gelato_galore:cookie_chips\"}},gelato_galore:ice_cream_one{Flavors: [{0: \"gelato_galore:vanilla\"}], Topping: {id: \"gelato_galore:rainbow_sprinkles\"}}",
+      "text": "You can add a topping to your ice cream! There are several types of toppings, from chips to syrups. You can only apply one topping to a serving of ice cream.$(br2)When you top your ice cream, the effects gotten from it are modified depending on the topping."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Syrup Topping",
+      "item": "gelato_galore:syrup{Filling:\"gelato_galore:chocolate\"},gelato_galore:syrup{Filling:\"gelato_galore:sweet_berry\"},gelato_galore:syrup{Filling:\"gelato_galore:vanilla\"}",
+      "text": "You can apply any syrup flavor as a topping. When you eat ice cream with that topping, you gain another effect determined by the syrup's flavor. The added effect lasts for half the time."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gelato_galore:cookie_chips",
+      "title": "Cookie Chips",
+      "text": "Cookie Chips have 8 uses. When you eat ice cream topped with them, the effects applied last for twice as long."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gelato_galore:rainbow_sprinkles",
+      "title": "Rainbow Sprinkles",
+      "text": "Rainbow Sprinkles have 8 uses. When you eat ice cream topped with them, the effects applied are amplified by 1 level."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "tag": "gelato_galore:chocolate"
+    }
+  ],
+  "result": {
+    "item": "gelato_galore:syrup",
+    "nbt": "{Filling:\"gelato_galore:chocolate\"}"
+  }
+}

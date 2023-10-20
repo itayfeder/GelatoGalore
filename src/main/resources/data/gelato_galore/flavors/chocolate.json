@@ -1,0 +1,9 @@
+{
+    "name": "chocolate",
+	"color": 13269596,
+	"effectInstance": {
+		"effect": "minecraft:speed",
+		"duration": 900,
+		"amplifier": 0
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "caramel",
+	"color": 14917446,
+	"effectInstance": {
+		"effect": "minecraft:fire_resistance",
+		"duration": 900,
+		"amplifier": 0
+	}
+}

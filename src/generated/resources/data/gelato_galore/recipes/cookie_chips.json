@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "tag": "minecraft:buttons"
+    },
+    "C": {
+      "item": "minecraft:cookie"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "GCG",
+    " I "
+  ],
+  "result": {
+    "item": "gelato_galore:cookie_chips"
+  }
+}

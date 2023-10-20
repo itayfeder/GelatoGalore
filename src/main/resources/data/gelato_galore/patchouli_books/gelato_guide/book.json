@@ -1,0 +1,8 @@
+{
+    "name": "Gelato Guide",
+    "landing_text": "The official documentation of Gelato Galore.",
+    "version": 1,
+    "model": "gelato_galore:gelato_guide",
+	"creative_tab": "gelato_galore",
+	"book_texture" : "gelato_galore:textures/gui/patchouli/book.png"
+}
