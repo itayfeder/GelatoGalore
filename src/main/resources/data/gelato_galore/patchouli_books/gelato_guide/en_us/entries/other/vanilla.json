@@ -1,0 +1,19 @@
+{
+  "name": "Vanilla",
+  "icon": "gelato_galore:vanilla_pods",
+  "category": "gelato_galore:other_category",
+  "pages": [
+	{
+      "type": "patchouli:spotlight",
+	  "title": "Vanilla",
+      "item": "gelato_galore:vanilla_pods",
+      "text": "Vanilla is a special plant, which grows on the side of blocks like a vine. Vanilla is very rare though, and it can only be bought from the Confectioner.$(br2)Once you buy vanilla pods from a Confectioner, you can grow your own!"
+    },
+    {
+      "type": "patchouli:smelting",
+	  "title": "Dried Vanilla Pods",
+      "recipe": "gelato_galore:dried_vanilla_pods",
+      "text": "Once vanilla blooms, you can harvest its pods, and dry them in a furnace. From the dried vanilla pods, you can make the classic vanilla ice cream flavor!"
+    }
+  ]
+}

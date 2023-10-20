@@ -7,7 +7,7 @@ plugins {
 }
 
 
-version = '1.0'
+version = '1.0-1.19.2'
 group = 'com.itayfeder' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'gelato_galore'
 
@@ -154,9 +154,6 @@ dependencies {
     implementation fg.deobf("curse.maven:jei-238222:3928388")
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")
 
-    implementation fg.deobf("curse.maven:create-328085:4762215")
-    implementation fg.deobf("curse.maven:farmers-delight-398521:4679318")
-
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
@@ -168,9 +165,6 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}:api")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

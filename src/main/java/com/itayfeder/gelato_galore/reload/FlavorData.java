@@ -69,8 +69,8 @@ public class FlavorData {
         if (name == null)
             throw new JsonParseException("name is not valid");
 
-        int color = GsonHelper.getAsInt(jsonObject, "color", -1);
-        if (color == -1)
+        int color = GsonHelper.getAsInt(jsonObject, "color", 0);
+        if (color < 0)
             throw new JsonParseException("color is not valid");
 
         ResourceLocation flavorTag = ResourceLocation.tryParse(GsonHelper.getAsString(jsonObject.getAsJsonObject(), "flavorIngredientTag", origin.toString()));
@@ -79,15 +79,15 @@ public class FlavorData {
         FlavorEffect instance = null;
         if (effectElement != null) {
             ResourceLocation location = ResourceLocation.tryParse(GsonHelper.getAsString(effectElement.getAsJsonObject(), "effect", null));
-            if (location == null)
-                throw new JsonParseException("effect is not valid");
+            if (location != null) {
+                int duration = GsonHelper.getAsInt(effectElement.getAsJsonObject(), "duration", 900);
+                int amplifier = GsonHelper.getAsInt(effectElement.getAsJsonObject(), "amplifier", 0);
 
-            int duration = GsonHelper.getAsInt(effectElement.getAsJsonObject(), "duration", 900);
-            int amplifier = GsonHelper.getAsInt(effectElement.getAsJsonObject(), "amplifier", 0);
+                MobEffect effect = ForgeRegistries.MOB_EFFECTS.getValue(location);
+                if (effect != null)
+                    instance = new FlavorEffect(effect, duration, amplifier);
+            }
 
-            MobEffect effect = ForgeRegistries.MOB_EFFECTS.getValue(location);
-            if (effect != null)
-                instance = new FlavorEffect(effect, duration, amplifier);
         }
 
         int patternId = GsonHelper.getAsInt(jsonObject, "patternId", 0);

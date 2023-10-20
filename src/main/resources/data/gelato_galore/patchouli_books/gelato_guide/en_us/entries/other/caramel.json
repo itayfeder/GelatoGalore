@@ -1,0 +1,13 @@
+{
+  "name": "Caramel",
+  "icon": "gelato_galore:caramel",
+  "category": "gelato_galore:other_category",
+  "pages": [
+    {
+      "type": "patchouli:smelting",
+	  "title": "Caramel",
+      "recipe": "gelato_galore:caramel",
+      "text": "Caramel is a new food item which can be created by smelting sugar. It is a very common topping of ice cream, and can even be created into a flavor of its own!"
+    }
+  ]
+}
